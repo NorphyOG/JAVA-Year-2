@@ -1,0 +1,8 @@
+S=Schüler K=Klassensprecher L=Lehrer: Vorname, Nachname, yyyy.mm.dd, Sex(M,W,D), Adresse;
+S:Jerome, Weber, 2002.4.30, M, Mendener Str. 71;
+S:Adriana, Wahl, 1999.6.12, W, Cool Str. 88;
+K:Kevib, Kek, 2010.2.9, D, Alo Str. 991;
+K:Utan, Leko, 2001.5.29, M, Mal Str. 67;
+L:Jeo, Tuan, 2003.6.30, D, Keko Str. 69;
+S:Pomi, Keno, 2005.8.9, M, Derin Str. 28;
+L:Kek, Nat, 1999.1.4, D, Lelo Str. 1;

@@ -1,0 +1,72 @@
+Index: src/Programm/controller/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Programm/controller/Controller.java b/src/Programm/controller/Controller.java
+--- a/src/Programm/controller/Controller.java	
++++ b/src/Programm/controller/Controller.java	(date 1648116049184)
+@@ -42,7 +42,11 @@
+         cubeKlicker.getbPrestige().addActionListener(this);
+ 
+         //Metoden
+-        model.setup(cubeKlicker, model);
++        try {
++            model.setup(cubeKlicker, model);
++        } catch (Exception exception) {
++            System.out.println(exception.getMessage());
++        }
+     }
+ 
+     @Override
+@@ -50,40 +54,40 @@
+ 
+         try {
+             if (e.getActionCommand().equals("KLICKER_BUTTON")) {
+-                model.klick(cubeKlicker);
++                model.getKlickClass().klick(cubeKlicker, model.getInfoUpdateClass(), model.getCubes());
+             }
+ 
+             if (e.getActionCommand().equals("MULTYBUY_BUTTON")) {
+-                model.multiButton(cubeKlicker);
++                model.getBuyClass().multiButton(cubeKlicker);
+             }
+ 
+             if (e.getActionCommand().equals("FARMER_1")) {
+-                model.buyFarmer(0, cubeKlicker);
++                model.getBuyClass().buyFarmer(0, cubeKlicker, model.getInfoUpdateClass(), model.getFarmerModels(), model.getCubes(), model.getPrestigeNum());
+             }
+ 
+             if (e.getActionCommand().equals("FARMER_2")) {
+-                model.buyFarmer(1, cubeKlicker);
++                model.getBuyClass().buyFarmer(1, cubeKlicker, model.getInfoUpdateClass(), model.getFarmerModels(), model.getCubes(), model.getPrestigeNum());
+             }
+ 
+             if (e.getActionCommand().equals("FARMER_3")) {
+-                model.buyFarmer(2, cubeKlicker);
++                model.getBuyClass().buyFarmer(2, cubeKlicker, model.getInfoUpdateClass(), model.getFarmerModels(), model.getCubes(), model.getPrestigeNum());
+             }
+ 
+             if (e.getActionCommand().equals("FARMER_4")) {
+-                model.buyFarmer(3, cubeKlicker);
++                model.getBuyClass().buyFarmer(3, cubeKlicker, model.getInfoUpdateClass(), model.getFarmerModels(), model.getCubes(), model.getPrestigeNum());
+             }
+ 
+             if (e.getActionCommand().equals("FARMER_5")) {
+-                model.buyFarmer(4, cubeKlicker);
++                model.getBuyClass().buyFarmer(4, cubeKlicker, model.getInfoUpdateClass(), model.getFarmerModels(), model.getCubes(), model.getPrestigeNum());
+             }
+ 
+             if (e.getActionCommand().equals("PRESTIGE")) {
+-
++                model.getPrestigeClass().prestige(cubeKlicker, model.getInfoUpdateClass(), model.getFarmerModels(), model.getPrestigeNum(), model.getCubes(), model.getCps());
+             }
+ 
+-            model.updateInfoPanel(cubeKlicker);
++            model.getInfoUpdateClass().updateInfoPanel(cubeKlicker, model.getFarmerModels());
+         } catch (Exception exception) {
+-
++            System.out.println(exception.getMessage());
+         }
+     }
+ }

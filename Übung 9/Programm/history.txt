@@ -1,0 +1,15 @@
+
+
+
+< Schüler >
+Person{ID='1610MS', vorname='Jerome', nachname='Weber', gebDate=2002-04-30, sex=M, adress='MendenerStr.71'}
+Person{ID='1529WS', vorname='Adriana', nachname='Wahl', gebDate=1999-06-12, sex=W, adress='CoolStr.88'}
+Person{ID='1550MS', vorname='Pomi', nachname='Keno', gebDate=2005-08-09, sex=M, adress='DerinStr.28'}
+
+< Klassen Sprecher >
+Person{ID='1501DK', vorname='Kevib', nachname='Kek', gebDate=2010-02-09, sex=D, adress='AloStr.991'}
+Person{ID='1610MK', vorname='Utan', nachname='Leko', gebDate=2001-05-29, sex=M, adress='MalStr.67'}
+
+< Lehrer >
+Person{ID='1580DL', vorname='Jeo', nachname='Tuan', gebDate=2003-06-30, sex=D, adress='KekoStr.69'}
+Person{ID='1539DL', vorname='Kek', nachname='Nat', gebDate=1999-01-04, sex=D, adress='LeloStr.1'}

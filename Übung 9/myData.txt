@@ -1,0 +1,5 @@
+S:1231223, Jerome, Weber, 2002.4.30, 'M', Mendener Str. 71;
+S:5245232, Adriana, Wahl, 1999.6.12, 'W', Cool Str. 88;
+K:4252323, Kevib, Kek, 2010.2.9, 'D', Alo Str. 991;
+K:234333, Utan, Leko, 2001.5.29, 'M', Mal Str. 67;
+L:23525, Jeo, Tuan, 2003.6.30, 'D', Keko Str. 69;
